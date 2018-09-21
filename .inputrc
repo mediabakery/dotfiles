@@ -11,6 +11,8 @@ set mark-symlinked-directories on
 # commands (i.e. more intelligent Up/Down behavior)
 "\e[B": history-search-forward
 "\e[A": history-search-backward
+"": history-search-forward
+"": history-search-backward
 
 # Do not autocomplete hidden files unless the pattern explicitly begins with a dot
 set match-hidden-files off
@@ -36,5 +38,14 @@ set input-meta on
 set output-meta on
 set convert-meta off
 
+# use TAB to cicle through completions
+TAB: menu-complete
+# use SHIFT + TAB to reverse
+"\e[Z": "\e-1\C-i"
+
 # Use Alt/Meta + Delete to delete the preceding word
 "\e[3;3~": kill-word
+
+# Bind arrow keys for word jump
+"\e[1;5D": backward-word
+"\e[1;5C": forward-word
