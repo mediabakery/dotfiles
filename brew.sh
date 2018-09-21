@@ -101,6 +101,8 @@ brew cask install nextcloud
 brew cask install tunnelblick
 brew cask install docker
 brew cask install iterm2
+brew cask install 1password
+brew cask install keepassx
 
 # Remove outdated versions from the cellar.
 brew cleanup
