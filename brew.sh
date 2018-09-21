@@ -41,7 +41,7 @@ brew install vim --with-override-system-vi
 brew install grep
 brew install openssh
 brew install screen
-brew install homebrew/php/php56 --with-gmp
+# brew install homebrew/php/php56 --with-gmp
 
 # Install font tools.
 brew tap bramstein/webfonttools
@@ -92,6 +92,14 @@ brew install ssh-copy-id
 brew install tree
 brew install vbindiff
 brew install zopfli
+brew install zsh zsh-completions
+
+# Install some applications via cask
+brew cask install visual-studio-code
+brew cask install slack
+brew cask install nextcloud
+brew cask install tunnelblick
+brew cask install docker
 
 # Remove outdated versions from the cellar.
 brew cleanup
