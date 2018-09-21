@@ -100,6 +100,7 @@ brew cask install slack
 brew cask install nextcloud
 brew cask install tunnelblick
 brew cask install docker
+brew cask install iterm2
 
 # Remove outdated versions from the cellar.
 brew cleanup
